@@ -8,35 +8,37 @@
   <!-- CSS  -->
   <link rel="stylesheet" href="assets/css/reset.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="white" role="navigation">
+  <nav class="nav" style="background-color:black; color:#ff9e80;" role="navigation" id="header">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <a id="logo-container" href="#" class="brand-logo" style="color:#ff9e80;">Robert Morris</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
       </ul>
 
       <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
   </nav>
-  <br>
+  
 
   <div id="index-banner" class="parallax-container">
     <div class="section no-pad-bot">
       <div class="container">
         <br><br>
-        <h1 class="header center teal-text text-lighten-2">Parallax Template</h1>
+        <h1 class="header center  text-lighten-2">Robert Morris</h1>
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-        </div>
-        <div class="row center">
-          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Get Started</a>
+          <h5 class="header col s12 light">Fullstack Developer</h5>
         </div>
         <br><br>
 
@@ -46,14 +48,14 @@
   </div>
 
 
-  <div class="container">
+  <div class="container" id="about">
     <div class="section">
 
       <!--   Icon Section   -->
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h2 class="center" style="color:#ff9e80;"><i class="material-icons">flash_on</i></h2>
             <h5 class="center">Speeds up development</h5>
 
             <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
@@ -62,7 +64,7 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h2 class="center" style="color:#ff9e80;"><i class="material-icons">group</i></h2>
             <h5 class="center">User Experience Focused</h5>
 
             <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
@@ -71,7 +73,7 @@
 
         <div class="col s12 m4">
           <div class="icon-block">
-            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h2 class="center" style="color:#ff9e80;"><i class="material-icons">settings</i></h2>
             <h5 class="center">Easy to work with</h5>
 
             <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
@@ -94,19 +96,66 @@
     <div class="parallax"><img src="assets/images/headerimg3.jpg" alt="Unsplashed background img 2"></div>
   </div>
 
-  <div class="container">
-    <div class="section">
-
+  <div
+  id="contact"
+  class="container center"
+  style="width:100%; min-width: 100%; padding: 5px; margin: 10px;"
+>
+  <div class="col m10 offset-m1 l5 s12 center" style="color:black;">
+      <!-- Header -->
+      <h2 class="center">Contact Me</h2>
+      <i class="small material-icons">contact_phone</i>
+      <h5>(303)726-5611</h5>
+      <i class="small material-icons">contact_mail</i>
+      <h5>belamorris@gmail.com</h5>
       <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
-        </div>
+          <form class="col m10 offset-m1 s12" method="post">
+              <div class="row">
+                  <div class="input-field col s12">
+                      <input id="name" type="text" />
+                      <!-- Name -->
+                      <label for="name">Name</label>
+                  </div>
+                  <div class="input-field col s12">
+                      <input
+                          id="email"
+                          type="email"
+                          class="form-input"
+                      />
+                      <!-- Email -->
+                      <label for="email">Email</label>
+                  </div>
+                  <div class="input-field col s12">
+                      <textarea
+                          id="message"
+                          class="materialize-textarea"
+                      ></textarea>
+                      <!-- Message -->
+                      <label for="message">Message</label>
+                  </div>
+              </div>
+              <!-- Button -->
+              <div class="row">
+                  <div class="col m12 center">
+                      <p class="right-align">
+                          <button
+                              style="background-color: black; color:#fdd835;"
+                              class="btn btn-large waves-effect waves-light"
+                              type="submit"
+                              body="message"
+                              value="Send Email"
+                              target="_top"
+                              action="mailto:belamorris@gmail.com"
+                          >
+                              Send Message
+                          </button>
+                      </p>
+                  </div>
+              </div>
+          </form>
       </div>
-
-    </div>
   </div>
+</div>
 
 
   <div class="parallax-container valign-wrapper">
@@ -119,41 +168,108 @@
     </div>
     <div class="parallax"><img src="assets/images/headerimg2.jpg" alt="Unsplashed background img 3"></div>
   </div>
+  <div class="container" style="text-align: center;" id="portfolio">
+  <div class="row">
+    <div class="col l12" style="border-bottom: solid 2px #ff9e80;">
+      <h2>Portfolio</h2>
+    </div>
+  </div>
+<div class="row">
+  <div class="col l4 s12">
+    <div class="card">
+      <div class="card-image">
+        <img src="assets/images/advadvi.png">
+      </div>
+      <div class="card-action">
+        <a href="https://raynamcginnis.github.io/group-project-1/">Adventure Advisors</a>
+        <a href="https://github.com/belamorris/group-project-1.git"><i class="fab fa-github-square fa-2x"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="col l4 s12">
+    <div class="card">
+      <div class="card-image">
+        <img src="assets/images/giftastic.png">
+      </div>
+      <div class="card-action">
+        <a href="https://belamorris.github.io/Giftastic/">Giftastic!</a>
+        <a href="https://github.com/belamorris/Giftastic.git"><i class="fab fa-github-square fa-2x"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="col l4 s12">
+    <div class="card">
+      <div class="card-image">
+        <img src="assets/images/trivia.png">
+      </div>
+      <div class="card-action">
+        <a href="https://belamorris.github.io/TriviaGame/">Trivia Game</a>
+        <a href="https://github.com/belamorris/TriviaGame.git"><i class="fab fa-github-square fa-2x"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col l4 s12">
+    <div class="card">
+      <div class="card-image">
+        <img src="assets/images/musicwars.png">
+      </div>
+      <div class="card-action">
+        <a href="https://belamorris.github.io/unit-4-game/">Music Wars</a>
+        <a href="https://github.com/belamorris/unit-4-game.git"><i class="fab fa-github-square fa-2x"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="col l4 s12">
+    <div class="card">
+      <div class="card-image">
+        <img src="assets/images/thedude.png">
+      </div>
+      <div class="card-action">
+        <a href="https://belamorris.github.io/Word-Guess/">The Dude Hangman!</a>
+        <a href="https://github.com/belamorris/Word-Guess.git"><i class="fab fa-github-square fa-2x"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="col l4 s12">
+   
+  </div>
+</div>
+  </div>
 
-  <footer class="page-footer teal">
-    <div class="container">
+  <footer class="page-footer" style="background:#ff9e80; color:white;">
+    <div class="container" style="text-align: center;">
       <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
-
-
+    <div class="col l4 s12">
+      <a href="assets/images/Resume.pdf"><i class="fas fa-file-pdf fa-9x"></i>
+      <h5>resume</h5></a>
+    </div>
+        <div class="col l4 s12">
+          <span style="color:white;"><a href="https://github.com/belamorris"><i class="fab fa-github-square fa-9x color: white;"></i>
+          <h5>GitHub</h5></span></a>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+        <div class="col l4 s12">
+          <a href="https://www.linkedin.com/in/robertdmorrisjr/"><i class="fab fa-linkedin fa-9x"></i>
+          <h5>LinkedIn</h5></a>
         </div>
       </div>
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+    <div class="row footer-copyright" style="margin-bottom: 0;">
+      <div class="col l3 s12">
+          Copyright &copy;
+          <a style="color:black;">Robert Morris</a>
       </div>
-    </div>
+      <div class="col l4 s12">
+          Made with:
+          <a
+              style="color:black;"
+              href="https://materializecss.com/"
+          >
+              Materialize
+          </a>
+      </div>
+  </div>
   </footer>
 
 
