@@ -69,19 +69,19 @@ At command prompt run node liri.js <pass in an instruction from above>
 
 Screenshot of the concert-this command
 
-![ ](images/concertthis.png)
+![ ](assets/images/concertthis.png)
 
 Screenshot of the movie-this
 
-![ ](images/moviethis.png)
+![ ](assets/images/moviethis.png)
 
 Screenshot of spotify-this-song
 
-![ ](images/spotify.png)
+![ ](assets/images/spotify.png)
 
 Screenshot of do-what-it-says
 
-![ ](images/dowhatitsays.png)
+![ ](assets/images/dowhatitsays.png)
 
 Technologies Utilized
 NodeJS
